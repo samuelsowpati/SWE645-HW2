@@ -1,0 +1,140 @@
+<!--
+SAMUEL ARCHIT SOWPATI
+G01448337
+
+->I have used the "form" tag to create a survey form. Along with multiple types of "input" fields 
+->For the first few fields in the form I used a "table" tag to set the alignment of the 
+label/input field pairs.
+->I used the "required" attribute for the 1st 9 Qs to mandate their entry
+->A cancel button which resets the form content
+-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    
+        <form action="">
+
+        <table>
+            <tr>
+                <td><label for="fname">1. First Name: </label></td>
+                <td><input type="text" id="fname" name="firstname" placeholder="Enter First Name" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="lname">2. Last Name: </label>
+                </td>
+                <td><input type="text" id="lname" name="lastname" placeholder="Enter Last Name" required>
+                </td>
+            </tr>
+            
+            <tr></tr>
+                <td><label for="staddr">3. Street Address</label>
+                </td>
+                <td><input type="text" id="staddr" name="streetaddress" placeholder="Enter Street Address" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="city">4. City</label>
+                </td>
+                <td><input type="text" id="city" name="city" placeholder="Enter City" required>
+                </td>
+            </tr>
+            <tr></tr>
+                <td><label for="state">5. State</label>
+                </td>
+                <td><input type="text" id="state" name="state" placeholder="Enter State" required>
+                </td>
+            </tr>
+    
+            
+            <tr>
+                <td><label for="zip">6. Zip</label></td>
+                <td><input type="text" id="zip" name="zip" placeholder="Enter Zipcode" required>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="tele">7. Telephone number</label>
+                </td>
+                <td><input type="number" id="tele" name="telephone" placeholder="Enter 10 digit phone no." required><br>
+                </td>
+            </tr>
+            
+            <tr>
+                <td><label for="email">8. Email</label></td>
+                <td><input type="email" id="email" name="email" placeholder="Enter email ID" required>
+            </td>
+            </tr>
+            
+            <tr>
+                <td><label for="date">9. Date</label></td>
+                <td>
+                    <input type="date" id="date" name="date" required></td>
+            </tr>
+        </table>
+        
+            <p>10. What do you like most about the campus: </p>
+            <input type="checkbox" name="students" id="students">
+            <label for="students">Students</label><br>
+            <input type="checkbox" name="location" id="location">
+            <label for="location">Location</label><br>
+            <input type="checkbox" name="campus" id="campus">
+            <label for="campus">Campus</label><br>
+            <input type="checkbox" name="atmosphere" id="atmosphere">
+            <label for="atmosphere">Atmosphere</label><br>
+            <input type="checkbox" name="dorm rooms" id="dorm rooms">
+            <label for="dorm rooms">Dorm Rooms</label><br>
+            <input type="checkbox" name="sports" id="sports">
+            <label for="sports">Sports</label>
+            <br>
+            
+            <br>
+            <label for="campus">11. How did you take interest in the university</label><br>
+            <input type="radio" name="campus" id="friends">
+            <label for="friends">Friends</label><br>
+    
+            <input type="radio" name="campus" id="television">
+            <label for="television">Television</label><br>
+            
+            <input type="radio" name="campus" id="internet">
+            <label for="internet">Internet</label><br>
+            
+            <input type="radio" name="campus" id="other">
+            <label for="other">Other</label><br>
+            
+            <br>
+            <label for="likelihood">12. What is the likelihood of recommending this school to other prospective students</label><br>
+            <br>
+            <select name="likelihood" id="likelihood">
+                <option value="verylikely">Very Likely</option>
+                <option value="likely">Likely</option>
+                <option value="unlikely">Unlikely</option>
+            </select>
+            <br>
+    
+            <br>
+            <label for="raffle">13. Raffle</label>
+            <input type="text" name="raffle" id="raffle" size="36" placeholder="Enter 10 comma separated numbers">
+            <br>
+    
+            <br>
+            <label for="comments">14. Additional Comments</label><br>
+            <textarea name="comments" id="comments" placeholder="Share your thoughts" rows="10" cols="40"></textarea>
+            <br>
+    
+            
+            <input type="reset" value="cancel">
+            <input type="submit" value="Submit">
+        </form>
+    
+</body>
+</html>
